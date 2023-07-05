@@ -1,0 +1,32 @@
+
+.add-content{
+padding: 50px 0 ;
+max-width: 600px ;
+margin: 0 auto ;
+}
+
+.add-content .input-container input {
+ width: 100% ;
+ background: var(--primary-color);
+ padding: 10px ;
+ border-radius:6px  ;
+ -webkit-border-radius:6px  ;
+ -moz-border-radius:6px  ;
+ -ms-border-radius:6px  ;
+ -o-border-radius:6px  ;
+ border: none ;
+ color : var(--white-color) ;
+ font-size: 1.25rem ;
+ text-transform: lowercase ;
+}
+
+.add-content .input-container input::placeholder{
+    padding: 10px ;
+    opacity: .7;
+}
+
+.result_data{
+ padding: 0 ;
+ margin: 0 ;
+ margin-top: 20px ;
+}

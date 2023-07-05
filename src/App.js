@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainContextProvider from './components/context/MainContext'
+import Header from './components/Header/Header';
+import WatchedList from './components/WatchedList/WatchedList';
+import Watched from './components/Watched/Watched';
+import Add from './components/Add/Add';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <Router>
+  <Header/>
+  <MainContextProvider>
+      <Routes>
+        <Route path="/" element={<WatchedList />} />
+        <Route path="/watched" element={<Watched />} />
+        <Route path="/add" element={<Add />} />
+      </Routes>
+  </MainContextProvider>
+    </Router>
+
   );
 }
 

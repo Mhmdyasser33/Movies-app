@@ -1,0 +1,47 @@
+.watch-list {
+    padding: 30px 0 ;
+  }
+
+  .watch-list .main-heading{
+       text-align: center ;
+  }
+
+  .movie-number {
+   display: block ;
+   background: var(--secondary-color);
+   padding: 5px 15px ;
+   font-size: 1.25rem;
+   font-weight: 600;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -ms-border-radius: 10px;
+   -o-border-radius: 10px;
+   color: var(--primary-color) ;
+  }
+
+  .watch-list h2{
+   color: var(--primary-color);
+   margin: 10px  ;
+  }
+
+  .movie-grid{
+    display: flex ;
+    justify-content: center;
+    align-items: center ;
+    flex-wrap: wrap ;
+    margin-top: 25px;
+  }
+
+  @media (min-width: 992px) {
+      .movie-grid{
+          grid-template-columns: (5, 1fr);
+      }
+  }
+
+  .container .no-movies{
+    text-align: center ;
+    font-size: 1.8rem ;
+   color :#c4c4ca ;
+   margin-top: 20px ;
+  }
