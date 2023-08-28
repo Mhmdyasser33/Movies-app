@@ -7,7 +7,7 @@ Welcome to the Movies App! This application allows users to browse, search, and 
 1. **Clone** this repository to your local machine using:
 
    ```sh
-   git clone https://github.com/your-username/movies-app.git
+   git clone https://github.com/Mhmdyasser33/Movies-app
    ```
 
    # Navigate to the project directory:
@@ -40,7 +40,6 @@ The project is organized as follows:
 - * src/
 - components/: Contains React components used in the application.
 - MovieList.js: Displays a list of movies.
-- MovieDetails.js: Displays detailed information about a selected movie.
 - SearchBar.js: Provides search functionality.
 - data/: Contains mock movie data for demonstration purposes.
  - movies.js: Contains an array of sample movies.
